@@ -1,0 +1,518 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Public+Sans&display=swap");
+
+/* BEGIN GENERAL STYLING */
+
+::selection {
+  background: #ffb7b7;
+}
+
+body {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  background-color: #f2ede7;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+b {
+  font-style: normal;
+  border-radius: 0 0 1em 0;
+  background-image: linear-gradient(
+    -75deg,
+    rgba(255, 250, 150, 0.15),
+    rgba(255, 244, 120, 1) 100%,
+    rgba(255, 250, 150, 0.25)
+  );
+}
+
+h1 {
+  font-size: 4.5rem;
+  color: black;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 2px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: black;
+  font-family: "DM Sans", sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+h3 {
+  color: black;
+  font-family: "DM Sans", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+
+h4 {
+  color: #3d3e3e;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* END GENERAL STYLING */
+
+/* BEGIN BUTTON */
+
+.btn {
+  padding: 16px 38px;
+  box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.2);
+  line-height: 1.25;
+  background: #ff3d6f;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  position: relative;
+  transition: background-color 0.6s ease;
+  overflow: hidden;
+  margin-bottom: 25px;
+  display: inline-block;
+  border: 2px solid black;
+}
+
+.btn:hover {
+  background-color: #e4006e;
+  color: white;
+  transition: 0.5s;
+}
+
+.btn-second {
+  border: 2px solid black;
+  padding: 16px 38px;
+  line-height: 1.25;
+  background: white;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  position: relative;
+  transition: background-color 0.6s ease;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.btn-second:hover {
+  background-color: #313131;
+  color: white;
+  transition: 0.5s;
+}
+
+/* BEGIN HEADER */
+
+.header {
+  background-color: rgba(255, 255, 255, 0.808);
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  border: 2px solid black;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.808);
+}
+
+.header li a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 1px;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #fff478;
+  transition: 0.5s;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 1.5em;
+  padding: 20px;
+  text-decoration: none;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* BEGIN RESPONSIVE HAMBURGER MENU */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+.menu-icon {
+  margin: 35px 50px; /*ADJUST HAMBURGER SIZE*/
+}
+
+.header .menu-icon {
+  cursor: pointer;
+  float: right;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: black;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: black;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header {
+    background-color: #fff;
+  }
+  .header ul {
+    background-color: #fff;
+  }
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+/* END RESPONSIVE HAMBURGER MENU */
+/* End Navigation */
+/* END HEADER */
+
+/*BEGIN HERO SECTION*/
+#slider,
+.wrap,
+.slide-content {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 700px;
+  overflow-x: hidden;
+}
+
+.wrap {
+  position: relative;
+}
+
+.slide {
+  background-size: cover;
+  background-image: url("https://cutewallpaper.org/23/aesthetic-minimalist-plants-desktop-wallpaper/20155694.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slide-content span {
+  color: #ff3d6f;
+}
+
+.slide-content p {
+  color: #000;
+  font-family: "DM Sans", sans-serif;
+  text-decoration: none;
+}
+/*END HERO SLIDES*/
+
+/*BEGIN ABOUT SECTION*/
+
+.about h1 {
+  font-size: 5rem;
+  color: #ff037b;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 2px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.about p {
+  font-size: 1.1rem;
+  color: black;
+  text-align: left;
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 1px;
+  line-height: 200%;
+  margin: 25px 15%;
+}
+
+.about a {
+  color: #ff037b;
+  transition: 0.5s;
+}
+
+.about a:hover {
+  background-color: #fff478;
+  color: #ff037b;
+  transition: 0.5s;
+}
+
+/*END ABOUT SECTION*/
+
+/*BEGIN PROJECT SECTION*/
+
+.project h1 {
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 2px;
+  color: #ff3d6f;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.project p {
+  font-size: 1.1rem;
+  color: black;
+  text-align: left;
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 1px;
+  line-height: 200%;
+  margin: 25px 10%;
+}
+
+/*END PROJECT SECTION*/
+
+/*BEGIN CARD SECTION*/
+.project ul {
+  font-size: 1.1rem;
+  text-align: center;
+  padding-left: 0px;
+}
+
+.project li {
+  font-size: 1.1rem;
+  color: black;
+  text-align: left;
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 1px;
+  margin: 10px;
+  display: inline;
+}
+
+.box-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-dev {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: auto;
+  border-radius: 4px;
+  background-color: #fff;
+  margin: 25px;
+  padding: 10px;
+  transition: 0.3s;
+  text-align: center;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.card-dev:nth-child(1) .img-area {
+  background-image: url("img/linkedin-generator.jpg");
+  background-position: center;
+}
+
+.card-dev:nth-child(2) .img-area {
+  background-image: url("");
+  background-position: center;
+}
+
+.card-dev:nth-child(3) .img-area {
+  background-image: url("img/home-sweet-home.jpg");
+  background-position: center;
+}
+
+.card-ux {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: auto;
+  border-radius: 4px;
+  background-color: #fff;
+  margin: 25px;
+  padding: 10px;
+  transition: 0.3s;
+  text-align: center;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.card-ux:nth-child(1) .img-area {
+  background-image: url("img/ux-mesh.png");
+  background-position: center;
+}
+
+.card-ux:nth-child(2) .img-area {
+  background-image: url("img/ux-dfg.png");
+  background-position: center;
+}
+
+.card-ux:nth-child(3) .img-area {
+  background-image: url("img/ux- parkingkitty.png");
+  background-position: center;
+}
+
+.img-area {
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  margin-bottom: 10px;
+  padding: 0px;
+  background-size: cover;
+  background-position: center center/cover;
+}
+
+.header-text {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 48px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.img-text {
+  font-family: Poppins;
+  padding-top: 20px;
+}
+
+.img-text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.single-box:hover {
+  background: #f4f4f4;
+}
+
+/*BEGIN CONTACT*/
+
+/*END CONTACT*/
+
+/*BEGIN FOOTER*/
+
+section,
+footer {
+  background: black;
+  padding: 100px;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.1rem;
+}
+
+footer ul {
+  list-style: none;
+  text-align: center;
+  padding-left: 0px;
+}
+
+footer ul li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+footer ul li:hover {
+  background-color: #fff;
+  color: white;
+  transition: 0.5s;
+}
+/*END FOOTER*/
