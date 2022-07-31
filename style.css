@@ -5,10 +5,14 @@
   background: #ffb7b7;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f6eee1;
   font-family: "DM Sans", sans-serif;
-  margin: 0;
+  margin: 0 auto;
 }
 
 a {
@@ -25,16 +29,6 @@ b {
     rgba(255, 244, 120, 1) 100%,
     rgba(255, 250, 150, 0.25)
   );
-}
-
-p {
-  color: black;
-  font-family: "DM Sans", sans-serif;
-  font-size: 1.1rem;
-  letter-spacing: 1px;
-  line-height: 200%;
-  margin: 25px 5%;
-  text-align: left;
 }
 
 h1 {
@@ -281,7 +275,7 @@ h4 {
 }
 
 .hero-content {
-  background-image: url("https://cutewallpaper.org/23/aesthetic-minimalist-plants-desktop-wallpaper/20155694.jpg");
+  background-image: url("img/hero-image.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -289,6 +283,17 @@ h4 {
 /*END HERO SLIDES*/
 
 /*BEGIN ABOUT SECTION*/
+.about img {
+  border: 3px solid black;
+  border-radius: 100%;
+  display: block;
+  margin-bottom: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 300px;
+  width: 25%;
+}
+
 .about h1 {
   color: #ff037b;
   font-family: "DM Sans", sans-serif;
@@ -297,9 +302,19 @@ h4 {
   margin-top: 100px;
 }
 
+.about p {
+  font-size: 1.1rem;
+  color: black;
+  text-align: left;
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 1px;
+  line-height: 200%;
+  margin: 25px 10%;
+}
+
 .about a {
   color: #ff037b;
-  font-weight: bold;
+  font-weight: bolder;
   transition: 0.5s;
 }
 
@@ -444,7 +459,7 @@ h4 {
 }
 
 .card-text p {
-  color: black;
+  color: #000000;
   font-family: "DM Sans", sans-serif;
   font-size: 1.1rem;
   letter-spacing: 0.5px;
@@ -455,21 +470,40 @@ h4 {
 
 /*BEGIN CONTACT*/
 .contact-content {
-  background-size: cover;
-  background-image: url("https://cutewallpaper.org/23/aesthetic-minimalist-plants-desktop-wallpaper/20155694.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: #f6eee1;
+}
+
+.contact-content p {
+  color: #000000;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  line-height: 200%;
+  padding: 0;
+  text-align: center;
+}
+
+.contact-content a {
+  color: #ff037b;
+  font-weight: bolder;
+  transition: 0.5s;
+}
+
+.contact-content a:hover {
+  background-color: #fff478;
+  color: #ff037b;
+  transition: 0.8s;
 }
 /*END CONTACT*/
 
 /*BEGIN FOOTER*/
 footer {
-  background: black;
+  background: #000000;
   padding: 100px;
 }
 
 footer a {
-  color: white;
+  color: #ff3d6f;
   font-family: "DM Sans", sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
@@ -489,7 +523,8 @@ footer p {
   color: #ffffff;
   font-family: "DM Sans", sans-serif;
   font-size: 1.1rem;
-  margin: 0;
+  letter-spacing: 1px;
+  line-height: 200%;
   padding: 0;
   text-align: center;
 }
