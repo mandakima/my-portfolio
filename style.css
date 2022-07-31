@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Public+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
 
 /* BEGIN GENERAL STYLING */
 ::selection {
@@ -17,6 +18,7 @@ body {
 
 a {
   color: #000000;
+  cursor: pointer;
   text-decoration: none;
 }
 
@@ -31,27 +33,42 @@ b {
   );
 }
 
-h1 {
+span {
+  color: #000000;
+  display: inline-block;
   font-family: "DM Sans", sans-serif;
-  font-size: 4.5rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-top: 5%;
+}
+
+h1 {
+  font-family: "Yeseva One", ser;
+  font-size: 6rem;
   letter-spacing: 2px;
   margin: 0 auto;
-  text-align: center;
+  margin-top: 25px;
+  width: 100%;
 }
 
 h2 {
+  color: #414c6b;
   font-family: "DM Sans", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  font-weight: lighter;
   letter-spacing: 1px;
   margin: 0 auto;
+  margin-top: 25px;
   text-align: center;
 }
 
 h3 {
+  color: #414c6b;
   font-family: "DM Sans", sans-serif;
-  font-size: 2rem;
+  font-size: 1.9rem;
   letter-spacing: 1px;
   margin: 0 auto;
+  margin-bottom: 25px;
   text-align: center;
 }
 
@@ -252,7 +269,7 @@ h4 {
 /* RESPONSIVE CLICKABLE MENU */
 /* END HEADER */
 
-/*BEGIN SECTION DISPLAY*/
+/*BEGIN FLEX SECTION DISPLAY*/
 .section-content {
   align-items: center;
   display: flex;
@@ -266,19 +283,18 @@ h4 {
 .wrap,
 .section-content {
   font-family: "DM Sans", sans-serif;
-  height: 700px;
-  margin: 0;
+  height: 650px;
+  margin: 0 auto;
   overflow-x: hidden;
   padding: 0;
   position: relative;
   width: 100%;
 }
 
-.hero-content {
+.hero-background {
   background-image: url("img/hero-image.jpg");
-  background-position: center;
+  background-position: 50% 25%;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 /*END HERO SLIDES*/
 
@@ -291,15 +307,18 @@ h4 {
   margin-left: auto;
   margin-right: auto;
   min-width: 300px;
+  max-width: 400px;
   width: 25%;
 }
 
 .about h1 {
-  color: #ff037b;
+  color: #000000;
   font-family: "DM Sans", sans-serif;
+  font-size: 3.5rem;
   letter-spacing: 2px;
   margin-bottom: 50px;
-  margin-top: 100px;
+  margin-top: 0px;
+  text-align: center;
 }
 
 .about p {
@@ -309,7 +328,9 @@ h4 {
   font-family: "DM Sans", sans-serif;
   letter-spacing: 1px;
   line-height: 200%;
-  margin: 25px 10%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
 }
 
 .about a {
@@ -327,8 +348,9 @@ h4 {
 
 /*BEGIN PROJECT SECTION*/
 .project h1 {
-  color: #ff3d6f;
+  color: #000000;
   font-family: "DM Sans", sans-serif;
+  font-size: 3.5rem;
   letter-spacing: 2px;
   margin-bottom: 50px;
   margin-top: 100px;
@@ -337,7 +359,7 @@ h4 {
 
 .project p {
   font-size: 1.1rem;
-  color: black;
+  color: #000000;
   text-align: left;
   font-family: "DM Sans", sans-serif;
   letter-spacing: 1px;
@@ -355,11 +377,10 @@ h4 {
 
 .project li {
   font-size: 1.1rem;
-  color: black;
-  text-align: left;
+  color: #000000;
   font-family: "DM Sans", sans-serif;
   letter-spacing: 1px;
-  margin: 10px;
+  margin: 0 1rem;
   display: inline;
 }
 
@@ -450,6 +471,7 @@ h4 {
 }
 
 .card-header {
+  color: #000000;
   display: inline-block;
   font-size: 1.5rem;
   font-weight: 500;
@@ -469,23 +491,46 @@ h4 {
 }
 
 /*BEGIN CONTACT*/
+.contact-wrap {
+  background-image: url("img/contact-image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .contact-content {
-  background-color: #f6eee1;
+  margin-bottom: 150px;
+}
+
+.contact-content h1 {
+  color: #000000;
+  display: block;
+  font-family: "Yeseva One", sans-serif;
+  font-size: 6rem;
+  letter-spacing: 2px;
+  line-height: 200%;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
 }
 
 .contact-content p {
   color: #000000;
+  display: block;
   font-family: "DM Sans", sans-serif;
   font-size: 1.2rem;
   letter-spacing: 1px;
   line-height: 200%;
+  margin: 0 auto;
+  margin-bottom: 50px;
   padding: 0;
-  text-align: center;
+  width: 60%;
 }
 
 .contact-content a {
   color: #ff037b;
+  font-size: 2rem;
   font-weight: bolder;
+  text-align: center;
   transition: 0.5s;
 }
 
@@ -499,7 +544,8 @@ h4 {
 /*BEGIN FOOTER*/
 footer {
   background: #000000;
-  padding: 100px;
+  margin: 0 auto;
+  padding: 25px 0;
 }
 
 footer a {

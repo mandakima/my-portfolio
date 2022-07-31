@@ -11,25 +11,25 @@
 
 <!--BEGIN HEADER-->
     <header class="header">
-        <a href="/index.html" class="logo">AK</a>
+        <a href="#top" class="logo">AK</a>
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <ul class="menu">
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="https://docs.google.com/document/d/1R9OomUME9fnu5qKafaUtzG67LSqgPGO4ycFkGJk7yY8/edit?usp=sharing">Resume</a></li>
+            <li><a href="https://docs.google.com/document/d/1R9OomUME9fnu5qKafaUtzG67LSqgPGO4ycFkGJk7yY8/edit?usp=sharing" target="_blank">Resume</a></li>
         </ul>
     </header>
 <!--END HEADER-->
 
 <!--BEGIN HERO -->
         <div class="wrap">
-                <div class="hero-content">
+                <div class="hero-background">
                     <div class="section-content">
-                        <h4>Hey there! I'm ... </h4>
+                        <span>Hey there! I'm... </span>
                         <h1>Amanda Kim</h1>
-                        <h2>A UI Developer based in Washington.</h2>
+                        <h2>UI Developer based in Washington.</h2>
                     </div>
                 </div>
         </div>
@@ -40,19 +40,18 @@
         <div class="about">
             <h1>About Me</h1>
             <img src="img/profile-picture.png" alt="Picture of Amanda Kim">
-            <p>I'm a second-generation Cambodian American and the first in my family to graduate from college. In my past life, I was
-            an accountant who worked for some Fortune 500 companies, including Vail Resorts and Marriott International. It wasn't
-            long before I discovered I didn't just want to help business needs, but also create solutions for users. </p>
+            <p>I'm a second-generation Cambodian American and the first in my family to graduate from college. Previously, I was an
+            accountant employed by Fortune 500 companies, including Vail Resorts and Marriott International. It wasn't long before I
+            discovered I didn't just want to help business needs, but also create solutions for users.</p>
 
             <p>As a UI Developer, I am driven to find effective solutions and bring a realistic outlook to every collaborative
-            environment. Designlab helped me understand how designers think with users in mind, and I'm currently studying web
+            environment. Designlab taught me how to think like a designer with users in mind, and I'm currently studying web
             development at <a href="https://skillspire.com">Skillspire</a> to hone my front-end skills.</p>
             
-            <p>When I'm not coding or designing, you can find me playing video games, doodling, <strike>experimental</strike> cooking, and reading about human psychology.</p>
+            <p>When I'm not coding or designing, you can find me playing video games, <strike>experimental</strike> cooking, and reading about human psychology.</p>
             
             <p><strong>TL;DR: I'm a previous accounting professional pivoting into UI Development.</strong></p>
         </div>
-
 <!--END ABOUT SECTION -->
 
 <!-- BEGIN DEVELOPER PROJECT CARD SECTION -->
@@ -76,7 +75,7 @@
                         <p>Don't know how to announce your new job on Linkedin? Try this post generator!
                             Built with <b>HTML, CSS, and JavaScript</b>.</p>
                     </div>
-                    <a href="https://dashing-sfogliatella-006f8d.netlify.app/" class="btn" target="_blank">Live Site</a>
+                    <a href="https://amandakim-linkedin-generator.netlify.app" class="btn" target="_blank">Live Site</a>
                     <a href="https://github.com/mandakima/linkedin-new-job-generator" class="btn-second" target="_blank">The Code</a>
                 </div>
             <div class="card-dev">
@@ -86,8 +85,8 @@
                     <p>I coded my own portfolio that reflects my personality by learning responsive design on the fly. Built with <b>HTML,
                         CSS.</b></p>
                 </div>
-                <a href="#" class="btn">Learn More</a>
-                <a href="https://github.com/mandakima/linkedin-new-job-generator" class="btn-second" target="_blank">The Code</a>
+                <a class="btn" onclick='myAlert()'>Live Site</a> 
+                <a href="https://github.com/mandakima/my-portfolio" class="btn-second" target="_blank">The Code</a>
             </div>
             <div class="card-dev">
                 <div class="img-area"></div>
@@ -96,8 +95,8 @@
                     <p>This landing page can give you an idea of your home budget! Can you afford a mansion? Built with <b>HTML,
                         and CSS</b>.</p>
                 </div>
-                <a href="#" class="btn">Live Site</a>
-                <a href="#" class="btn-second">The Code</a>
+                <a href="https://www.shecodes.io/workshops/shecodes-online-workshop-52-0/projects/228179 " class="btn" target="_blank">Live Site</a>
+                <a href="https://codepen.io/mandakima/pen/XWEaWyg" class="btn-second" target="_blank">The Code</a>
             </div>
         </div>
         <!-- END DEVELOPER PROJECT CARD SECTION -->
@@ -148,11 +147,13 @@
 <!--BEGIN CONTACT -->
 <a id="contact"></a>
     <div class="wrap">
-            <div class="contact-content">
+            <div class="contact-wrap">
                 <div class="section-content">
+                    <div class="contact-content">
                     <h1>Contact</h1>
-                    <p>I’m open for <strong>UI Development</strong> & <strong>Front-End</strong> opportunities!</p>
-                    <h3><a href="mailto:kim.amanda@outlook.com">kim.amanda@outlook.com</a></h3>
+                    <p>I’m open for <strong>UI Development</strong> & <strong>Front-End</strong> opportunities!</p> 
+                        <a href="mailto:kim.amanda@outlook.com">kim.amanda@outlook.com</a>
+                    </div>
                 </div>
             </div>
     </div>
@@ -162,10 +163,16 @@
 <footer>
     <p class="footer">Design & Coded by yours truly in the sunny PNW ☀️</p>
     <ul>
-        <li><a href="https://www.linkedin.com/in/kim-amanda/">Linkedin</a></li>
-        <li><a href="https://github.com/mandakima">Github</a></li>
+        <li><a href="https://www.linkedin.com/in/kim-amanda/" target="_blank">Linkedin</a></li>
+        <li><a href="https://github.com/mandakima" target="_blank">Github</a></li>
+        <li><a href="https://codepen.io/mandakima" target="_blank">Codepen</a></li>
     </ul>
 </footer>
+<script type="text/javascript">
+    function myAlert() {
+        alert("You're already looking at the site! (･ω<)☆");
+    }
+</script>
 </body>
 </html>
 <!-- END FOOTER -->
