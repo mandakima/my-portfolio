@@ -1,178 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amanda Kim - UI Developer - Interactive Designer</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amanda Kim - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body>    
-
-<!--BEGIN HEADER-->
-    <header class="header">
-        <a href="#top" class="logo">AK</a>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="https://docs.google.com/document/d/1R9OomUME9fnu5qKafaUtzG67LSqgPGO4ycFkGJk7yY8/edit?usp=sharing" target="_blank">Resume</a></li>
-        </ul>
-    </header>
-<!--END HEADER-->
-
-<!--BEGIN HERO -->
-        <div class="wrap">
-                <div class="hero-background">
-                    <div class="section-content">
-                        <span>Hey there! I'm... </span>
-                        <h1>Amanda Kim</h1>
-                        <h2>UI Developer based in Washington</h2>
-                    </div>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <nav class="navbar flex w-100 space-between">
+            <div class="logo">
+                <div class="logo-text">
+                    <h2 style="padding-bottom: 0">Amanda Kim</h2>
                 </div>
-        </div>
-<!--END HERO-->
-
-<!-- BEGIN ABOUT SECTION -->
-        <a id="about"></a>
-        <div class="about">
-            <h1>About Me</h1>
-            <img src="img/profile-picture.png" alt="Picture of Amanda Kim">
-            <p>I'm a second-generation Cambodian American and the first in my family to graduate from college. Previously, I was an
-            accountant employed by Fortune 500 companies, including Vail Resorts and Marriott International. It wasn't long before I
-            discovered I didn't just want to help business needs, but also create solutions for users.</p>
-
-            <p>As a UI Developer, I am driven to find effective solutions and bring a realistic outlook to every collaborative
-            environment. Designlab taught me how to think like a designer with users in mind, and I'm currently studying web
-            development at <a href="https://skillspire.com">Skillspire</a> to hone my front-end skills.</p>
-            
-            <p>When I'm not coding or designing, you can find me playing video games, <strike>experimental</strike> cooking, and reading about human psychology.</p>
-            
-            <p><strong>TL;DR: I'm a previous accounting professional pivoting into UI Development.</strong></p>
-        </div>
-<!--END ABOUT SECTION -->
-
-<!-- BEGIN DEVELOPER PROJECT CARD SECTION -->
-        <a id="projects"></a>
-        <div class="project">
-            <h1>Featured Projects</h1>
-            <h3>Web Development Skills Utilized</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Git</li>
-                <li>GitHub</li>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu flex space-between">
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact">Resume</a></li>
             </ul>
-        </div>
-        <div class="box-section">
-            <div class="card-dev">
-                <div class="img-area"></div>
-                    <div class="card-text">
-                        <span class="card-header"><strong>Linkedin Post Generator</strong></span>
-                        <p>Don't know how to announce your new job on Linkedin? Try this post generator!
-                            Built with <b>HTML, CSS, and JavaScript</b>.</p>
-                    </div>
-                    <a href="https://amandakim-linkedin-generator.netlify.app" class="btn" target="_blank">Live Site</a>
-                    <a href="https://github.com/mandakima/linkedin-new-job-generator" class="btn-second" target="_blank">The Code</a>
-                </div>
-            <div class="card-dev">
-                <div class="img-area"></div>
-                <div class="card-text">
-                    <span class="card-header"><strong>Personal Portfolio</strong></span>
-                    <p>I coded my own portfolio that reflects my personality by learning responsive design on the fly. Built with <b>HTML &
-                        CSS.</b></p>
-                </div>
-                <a class="btn" onclick='myAlert()'>Live Site</a> 
-                <a href="https://github.com/mandakima/my-portfolio" class="btn-second" target="_blank">The Code</a>
-            </div>
-            <div class="card-dev">
-                <div class="img-area"></div>
-                <div class="card-text">
-                    <span class="card-header"><strong>Desktop Landing Page</strong></span>
-                    <p>This landing page can give you an idea of your home budget! Can you afford a mansion? Built with <b>HTML,
-                        CSS, & JS</b>.</p>
-                </div>
-                <a href="https://www.shecodes.io/workshops/shecodes-online-workshop-52-0/projects/228179 " class="btn" target="_blank">Live Site</a>
-                <a href="https://codepen.io/mandakima/pen/XWEaWyg" class="btn-second" target="_blank">The Code</a>
-            </div>
-        </div>
-        <!-- END DEVELOPER PROJECT CARD SECTION -->
-
-        <!-- BEGIN UX PROJECT CARD SECTION -->
-        <div class="project">
-            <h1>Featured UX Projects</h1>
-            <h3>Design Skills Utilized</h3>
-            <ul>
-                <li>User Research</li>
-                <li>Wireframe</li>
-                <li>Prototype</li>
-                <li>Interaction Design</li>
-                <li>Figma</li>
+            <ul class="mobile-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact">Resume</a></li>
             </ul>
-        </div>
-        <div class="box-section">
-            <div class="card-ux">
-                <div class="img-area"></div>
-                <div class="card-text">
-                    <span class="card-header"><strong>Mesh</strong></span>
-                    <p>Adulting is hard and the struggle of making friends as an adult is real. Is it worth to continue and pursue this minimum viable product?</p>
-                </div>
-                <a href="https://www.amandakim.me/home/mesh" class="btn" target="_blank">Read Case Study</a>
-            </div>
-        
-            <div class="card-ux">
-                <div class="img-area"></div>
-                <div class="card-text">
-                    <span class="card-header"><strong>Develop for Good</strong></span>
-                    <p>Collaborating with designers to conceptualize a landing page for a nonprofit to elevate their branding and visuals.</p>
-                </div>
-                <a href="https://www.amandakim.me/home/develop-for-good" class="btn" target="_blank">Read Case Study</a>
-            </div>
-            <div class="card-ux">
-                <div class="img-area"></div>
-                <div class="card-text">
-                    <span class="card-header"><strong>Parking Kitty</strong></span>
-                    <p>Based on the current parking situation in Portland, a customizable alarm feature would help
-                        the overall parking experience.
-                    </p>
-                </div>
-                <a href="https://www.amandakim.me/home/parking-kitty" class="btn" target="_blank">Read Case Study</a>
-            </div>
-        </div>
-<!--END UX PROJECTS-->
-    
-<!--BEGIN CONTACT -->
-<a id="contact"></a>
-    <div class="wrap">
-            <div class="contact-wrap">
-                <div class="section-content">
-                    <div class="contact-content">
-                    <h1>Contact</h1>
-                    <p>I’m open for <strong>UI Development</strong> & <strong>Front-End Design</strong> opportunities!</p> 
-                        <a href="mailto:kim.amanda@outlook.com">kim.amanda@outlook.com</a>
-                    </div>
-                </div>
-            </div>
+        </nav>
     </div>
-<!--END CONTACT-->
 
-<!-- BEGIN FOOTER -->
-<footer>
-    <p class="footer">Design & Coded by yours truly in the sunny PNW ☀️</p>
-    <ul>
-        <li><a href="https://www.linkedin.com/in/kim-amanda/" target="_blank">Linkedin</a></li>
-        <li><a href="https://github.com/mandakima" target="_blank">Github</a></li>
-        <li><a href="https://codepen.io/mandakima" target="_blank">Codepen</a></li>
-    </ul>
-</footer>
-<script type="text/javascript">
-    function myAlert() {
-        alert("You're already looking at the site! (･ω<)☆");
-    }
-</script>
+    <!-- Hero Section -->
+    <div class="section-1 hero-section w-100 h-100" id="home">
+        <div class="hero-section__wrapper flex flex-column flex-center w-100 h-100">
+            <h1>Amanda Kim</h1>
+            <p>Front End Developer based in Washington State.
+            </p>
+            <button class="theme-btn">Projects</button>
+        </div>
+    </div>
+
+    <!-- About Me Section -->
+    <div class="section-2 about-section section-padding w-100 flex flex-column" id="about">
+        <div class="about-section__wrapper container">
+            <div class="about-section__heading w-100 flex flex-column flex-center">
+                <h2 class="section-heading">About Me</h2>
+                <p class="section-heading__para margin-auto">
+                    TL;DR: I'm a previous accounting professional pivoting into UI Development.
+                </p>
+            </div>
+            <div class="about-section__detail w-100 flex">
+                <div class="get-to-know-me w-50">
+                    <h3>Hey there!</h3>
+
+                    <p>I'm a second-generation Cambodian American and the first in my family to graduate from college.
+                    Previously, I was an accountant employed by Fortune 500 companies, including Vail Resorts
+                    and Marriott International. It wasn't long before I discovered I didn't just want to help
+                    business needs, but also create solutions for users.</p>
+                    
+                    <p>As a UI Developer, I am driven to find effective solutions and bring a realistic outlook
+                    to every collaborative environment. Designlab taught me how to think like a designer with
+                    users in mind, and I'm currently studying web development at Skillspire to hone my front-end skills.</p>
+
+                    <p>When I'm not coding or designing, you can find me playing video games, experimental cooking,
+                    and reading about human psychology.</p>
+                                                 
+
+                    <button class="theme-btn theme-btn--primary">Contact</button>
+                </div>
+                <div class="skills w-50">
+                    <h3>My Skills</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>SCSS</li>
+                        <li>BOOTSTRAP</li>
+                        <li>JAVASCRIPT</li>
+                        <li>REACT</li>
+                        <li>NODEJS</li>
+                        <li>GIT</li>
+                        <li>MONGODB</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="section-3 section-padding project-section w-100" id="project">
+        <div class="project-section__wrapper container w-100">
+            <div class="project-section__heading">
+                <h2 class="section-heading">Projects</h2>
+                <p class="section-heading__para">
+                    Here you will find some of the personal and clients projects that I
+                    created with each project containing its own case study
+                </p>
+            </div>
+            <div class="projects-row">
+                <div class="projects">
+                    <div class="project-image">
+                        <img src="./img/ux-mesh.png" alt="" />
+                    </div>
+                    <div class="project-content">
+                        <h2>PROJECT NAME</h2>
+                            <p>Some awesome text some awesome text some awesome text
+                            some awesome textsome awesome textsome awesome text
+                            some awesome text some awesome text. </p>
+
+                        <button class="theme-btn theme-btn--primary">Live Site</button>
+                        <button class="theme-btn theme-btn--primary">The Code</button>
+                    </div>
+                </div>
+
+                <div class="projects">
+                    <div class="project-image">
+                        <img src="./img/ux-mesh.png" alt="" />
+                    </div>
+                    <div class="project-content">
+                        <h2>PROJECT NAME</h2>
+                        <p>Some awesome text some awesome text some awesome text
+                            some awesome textsome awesome textsome awesome text
+                            some awesome text some awesome text. </p>
+                        <button class="theme-btn theme-btn--primary">Live Site</button>
+                        <button class="theme-btn theme-btn--primary">The Code</button>
+                    </div>
+                </div>
+
+                <div class="projects">
+                    <div class="project-image">
+                        <img src="./img/ux-mesh.png" alt="" />
+                    </div>
+                    <div class="project-content">
+                        <h2>PROJECT NAME</h2>
+                        <p>Some awesome text some awesome text some awesome text
+                            some awesome textsome awesome textsome awesome text
+                            some awesome text some awesome text. </p>
+                        <button class="theme-btn theme-btn--primary">Live Site</button>
+                        <button class="theme-btn theme-btn--primary">The Code</button>
+                    </div>
+                </div>
+
+                <div class="projects">
+                    <div class="project-image">
+                        <img src="./img/ux-mesh.png" alt="" />
+                    </div>
+                    <div class="project-content">
+                        <h2>PROJECT NAME</h2>
+                        <p>Some awesome text some awesome text some awesome text
+                            some awesome textsome awesome textsome awesome text
+                            some awesome text some awesome text. </p>
+                        <button class="theme-btn theme-btn--primary">Live Site</button>
+                        <button class="theme-btn theme-btn--primary">The Code</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact section -->
+
+    <div class="section-4 contact-us w-100 section-padding" id="contact">
+        <div class="contact-us__wrapper w-100">
+            <div class="project-section__heading">
+                <h2 class="section-heading">Contact</h2>
+                <p class="section-heading__para">
+                    I'm open to <strong>Job opportunities</strong> where I can
+                    contribute, learn and grow. If you have a good opportunity that
+                    matches my skills and experience then don't hesitate to contact
+                    me.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="footer-wrapper section-padding container">
+            <div class="footer-left">
+                <h2>Amanda Kim</h2>
+                <p>
+                    I'm a Web Developer with a focus on front end design.
+                </p>
+            </div>
+            <div class="footer-right">
+                <h2>Other Links</h2>
+                <a href="google.com"><i class="fab fa-facebook-square"></i></i></a>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-github-square"></i>
+            </div>
+        </div>
+        <p class="copyright">Made by yours truly in sunny PNW ☀️</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/1499c5b7ce.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-<!-- END FOOTER -->
