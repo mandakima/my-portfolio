@@ -473,7 +473,7 @@ footer {
     text-align: center;
   }
   .section-heading__para {
-    width: 100%;
+    width: 75%;
   }
   .navbar .nav-menu {
     display: none;
@@ -509,5 +509,10 @@ footer {
   }
   .icon-wrapper {
     flex-direction: row;
+  }
+  .button-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 }
