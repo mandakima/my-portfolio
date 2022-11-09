@@ -413,7 +413,7 @@ footer {
     height: auto;
   }
   .hero-section p {
-    font-size: var(--fs-small);
+    font-size: var(--fs-medium);
   }
   .navbar {
     padding: 2rem;
@@ -423,6 +423,7 @@ footer {
   }
 
   .hero-section__wrapper h1 {
+    font-size: 8rem;
     text-align: center;
   }
   .hero-section__wrapper {
@@ -471,6 +472,10 @@ footer {
   }
   .hero-section__wrapper h1 {
     text-align: center;
+    font-size: 6rem;
+  }
+  .hero-section p {
+    font-size: var(--fs-small);
   }
   .section-heading__para {
     width: 75%;
