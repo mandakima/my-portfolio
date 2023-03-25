@@ -269,7 +269,7 @@ p,
 }
 
 .logo a span {
-  color: #ff1744;
+  color: #ff0073;
   font-weight: 500;
 }
 
@@ -345,17 +345,12 @@ p,
 }
 
 .about-section__detail {
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 
 .get-to-know-me p {
   line-height: 175%;
   margin-bottom: 1.6rem;
-}
-
-.get-to-know-me a {
-  color: #ff1744 !important;
-  font-weight: 600;
 }
 
 .get-to-know-me,
